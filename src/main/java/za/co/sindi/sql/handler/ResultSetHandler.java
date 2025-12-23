@@ -11,6 +11,7 @@ import java.sql.SQLException;
  * @since 30 December 2012
  *
  */
+@FunctionalInterface
 public interface ResultSetHandler<T> {
 
 	public T handle(ResultSet rs) throws SQLException;
